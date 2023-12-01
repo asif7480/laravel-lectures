@@ -1,0 +1,1 @@
+<h2>Calling single action controller</h2>
