@@ -32,8 +32,17 @@
                         <td>{{ $student_data->course }}</td>
                         <td>{{ $student_data->contact }}</td>
                         <td>
-                            <a href="" class="btn btn-info">Update</a>
-                            <a href="" class="btn btn-danger">Delete</a>
+                            <a href="{{ url('edit-student/' . $student_data->id) }}" class="btn btn-info">Update</a>
+                            <!-- <a href="{{ url('delete-student/'. $student_data->id) }}" class="btn btn-danger">Delete</a> -->
+                            
+                        </td>
+                        <td>
+                        <form action="{{ url('delete-student/' . $student_data->id) }}" method="post">
+                                @csrf
+                                @method('delete')
+
+                                <input type="submit" class="btn btn-danger" value="Delete">
+                            </form>
                         </td>
                     </tr>
 
