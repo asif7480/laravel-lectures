@@ -1,0 +1,50 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use App\Models\Student;
+use Faker\Factory as Faker
+
+class CustomersSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        //    for Seeder
+        //    $student = new Student;
+        //    $student->name = 'Abc';
+        //    $student->course = 'DISM';
+        //    $student->contact = '123456';
+        //    $student->save();
+
+
+        //    ----------------------
+
+        //    for Faker
+        //    $faker = Faker::create();  
+        //    $student = new Student;
+        //    $student->name = $faker->name;
+        //    $student->course = $aker->course;
+        //    $student->contact = $faker->contact;
+        //    $student->save();
+
+        //    ------------------
+
+        //    inserting 100 data fake data at once
+
+        
+        //    $faker = Faker::create();
+        for($i=1; $i<=100; $i++){
+  
+        //    $student = new Student;
+        //    $student->name = $faker->name;
+        //    $student->course = $aker->course;
+        //    $student->contact = $faker->contact;
+        //    $student->save();
+        }
+    }
+}
